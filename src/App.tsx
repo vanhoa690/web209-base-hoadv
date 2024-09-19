@@ -15,16 +15,21 @@ function App() {
               style={{ gap: 3, fontSize: 20 }}
             >
               <li className="nav-item">
-                <Link className="nav-link active" to="/register">
+                <Link className="nav-link active" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/register">
                   Register
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/login">
+                <Link className="nav-link" to="/login">
                   Login
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link active" to="/product/add">
                   Add Product
                 </Link>
@@ -33,7 +38,7 @@ function App() {
                 <Link className="nav-link active" to="/product/list">
                   List Product
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <button className="btn btn-danger">Logout</button>
