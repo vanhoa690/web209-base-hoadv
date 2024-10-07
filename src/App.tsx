@@ -6,19 +6,12 @@ function App() {
     <>
       <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            Thi WEB209
-          </Link>
+          <span className="navbar-brand">Thi WEB209 React</span>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul
               className="navbar-nav me-auto mb-2 mb-lg-0"
               style={{ gap: 3, fontSize: 20 }}
             >
-              <li className="nav-item">
-                <Link className="nav-link active" to="/">
-                  Home
-                </Link>
-              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/register">
                   Register
@@ -29,16 +22,16 @@ function App() {
                   Login
                 </Link>
               </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link active" to="/product/add">
+              <li className="nav-item">
+                <Link className="nav-link" to="/product/add">
                   Add Product
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/product/list">
+                <Link className="nav-link" to="/product/list">
                   List Product
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
           <button className="btn btn-danger">Logout</button>
