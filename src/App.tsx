@@ -1,7 +1,26 @@
 import { Link, useRoutes } from "react-router-dom";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import ProductList from "./pages/ProductList";
+import ProductAdd from "./pages/ProductAdd";
+import ProductEdit from "./pages/ProductEdit";
+import { Toaster } from "react-hot-toast";
+import AdminLayout from "./components/AdminLayout";
 
 function App() {
-  const routes = useRoutes([]);
+  const routes = useRoutes([
+    { path: "register", element: <Register /> },
+    { path: "login", element: <Login /> },
+    {
+      path: "",
+      element: <AdminLayout />,
+      children: [
+        { path: "product/list", element: <ProductList /> },
+        { path: "product/add", element: <ProductAdd /> },
+        { path: "product/edit/:id", element: <ProductEdit /> },
+      ],
+    },
+  ]);
   return (
     <>
       <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -38,6 +57,7 @@ function App() {
         </div>
       </nav>
       <div className="container">{routes}</div>
+      <Toaster />
     </>
   );
 }

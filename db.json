@@ -1,4 +1,23 @@
 {
-  "products": [],
-  "users": []
+  "products": [
+    {
+      "name": "1update",
+      "image": "2",
+      "quantity": "3",
+      "category": "Legen",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "email": "hoadv21@fpt.edu.vn",
+      "password": "$2a$10$eiwGb0g9jtvG9P7wEDisSON9BU0g6upSRUmSAP8BiVUSmeK5fKmwW",
+      "id": 1
+    },
+    {
+      "email": "44@gmail.com",
+      "password": "$2a$10$CqyCUHsV5WHDvMQb5WkDHOU4d.j/Wop4ULmJNrKv2gagA1KU5Ggl6",
+      "id": 2
+    }
+  ]
 }
