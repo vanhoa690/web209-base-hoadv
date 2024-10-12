@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import { Link, useRoutes } from "react-router-dom";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         </div>
       </nav>
       <div className="container">{routes}</div>
+      <Toaster />
     </>
   );
 }
